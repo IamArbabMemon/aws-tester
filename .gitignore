@@ -1,0 +1,38 @@
+# Node dependencies
+node_modules/
+
+# Env variables
+.env
+.env.*     # for .env.local, .env.test etc.
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Runtime files
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Optional IDE files
+.vscode/
+.idea/
+*.sw?
+
+# Test coverage
+coverage/
+
+# Build output (if you build with TypeScript or Babel)
+dist/
+build/
+
+# Nodemon
+.nodemon.json
