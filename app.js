@@ -13,6 +13,10 @@ const pool = new Pool({                   // 1‑pool for the whole app
 
 app.use(express.json());                  // parse application/json
 
+app.get("/users",async(req,res)=>{
+    return res.json("I am on");
+})
+
 app.post('/users', async (req, res) => {
   const { username, email, phone, password, gender } = req.body;
 
@@ -48,3 +52,6 @@ app.post('/users', async (req, res) => {
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`API ready on :${PORT}`));
+
+
+// 54.159.128.164
