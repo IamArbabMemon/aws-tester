@@ -3,13 +3,13 @@ const express = require('express');
 const { Pool } = require('pg');
 
 const app  = express();
-const pool = new Pool({                   // 1‑pool for the whole app
-  host    : process.env.DB_HOST,
-  port    : process.env.DB_PORT,
-  user    : process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME,
-});
+// const pool = new Pool({                   // 1‑pool for the whole app
+//   host    : process.env.DB_HOST,
+//   port    : process.env.DB_PORT,
+//   user    : process.env.DB_USER,
+//   password: process.env.DB_PASSWORD,
+//   database: process.env.DB_NAME,
+// });
 
 app.use(express.json());                  // parse application/json
 
